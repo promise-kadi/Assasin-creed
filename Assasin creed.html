@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100%;
+            height: 510vh;
+            background-color: white;
+        }
+        .one{
+            width: 100%;
+            height: 60px;
+            background-color: blue;
+            float: left;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+        .one i{
+            float: left;
+            margin-top: 10px;
+            margin-left: 10%;
+            font-size: 30px;
+            color: white;
+        }
+        .one h3{
+            margin-top: 15px;
+            margin-left: 5px;
+            float: left;
+            color: white;
+        }
+        nav{
+            width: 100%;
+            height: 70px;
+            background-color: yellow;
+            background-color: transparent;
+        }
+        nav ul{
+            list-style-type: none;
+            margin-left: 50%;
+        }
+        nav ul li{
+            float: left;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        #bold{
+            background-color: rgba(255, 255, 255, 0.462);
+            width: 60px;
+            height: 30px;
+            border-radius: 20px;
+            padding-top: 7px;
+            padding-left: 20px;
+            margin-top: 13px;
+        }
+        nav :hover{
+            background-color: rgba(255, 255, 255, 0.462);
+            border-radius: 20px;
+        }
+        .one button{
+            width: 80px;
+            height: 30px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 13px;
+            margin-left: 20px;
+            background-color: orangered;
+            color: white;
+        }
+        .two{
+            width: 100%;
+            height: 400px;
+            background-color: blue;
+            float: left;
+            padding-top: 7%;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+        .left{
+            width: 50%;
+            height: 300px;
+            background-color: red;
+            background-color: transparent;
+            float: left;
+        }
+        .left h5{
+            color: white;
+            margin-left: 20%;
+            margin-top: 7%;
+        }
+        .left h6{
+            color: white;
+            font-size: 25px;
+            margin-left: 20%;
+            margin-top: 20px;
+        }
+        .left p{
+            color: white;
+            font-weight: bolder;
+            font-size: 12px;
+            margin-left: 20%;
+            margin-top: 20px;
+        }
+        .left-div{
+            width: 400px;
+            height: 60px;
+            float: left;
+            background-color: yellow;
+            background-color: transparent;
+            margin-left: 20%;
+            margin-top: 20px;
+        }
+        .left-div input{
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 20px;
+            float: left;
+        }
+        .left-div input::placeholder{
+            padding-left: 10px;
+        }
+        .search{
+            width: 120px;
+            height: 30px;
+            background-color: orangered;
+            border-radius: 20px;
+            float: left;
+            margin-top: 20px;
+            margin-left: -20px;
+        }
+        .search:hover{
+            background-color: blue;
+        }
+        .search span{
+            color: white;
+            float: left;
+            font-weight: bolder;
+            font-size: 10px;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .right{
+            width: 50%;
+            height: 350px;
+            background-color: purple;
+            background-color: transparent;
+            float: left;
+        }
+        .right img{
+            width: 250px;
+            border-radius: 20px;
+            margin-left: 30%;
+            float: left;
+        }
+        .right-top{
+            width: 45px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: blue;
+            float: left;
+            margin-left: -50px;
+            margin-top: 10px;
+        }
+        .right-bottom{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: orangered;
+            float: left;
+            margin-top: 40%;
+            margin-left: -38%;
+        }
+        .right-span{
+            color: white;
+            font-weight: bolder;
+            margin-left: 10px;
+            margin-top: 5px;
+            float: left;
+        }
+        .right-span-2{
+            color: white;
+            float: left;
+            font-weight: bolder;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        .three{
+            width: 100%;
+            height: 150px;
+            background-color: yellow;
+            background-color: transparent;
+            float: left;
+        }
+        .three-box{
+            width: 230px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-top: -30px;
+            margin-left: 10%;
+            border-radius: 20px;
+            box-shadow: 0 0 2px black;
+        }
+        .three-box:hover #icon{
+            background-color: orangered;
+        }
+        .three-box-1{
+            width: 230px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-top: -30px;
+            margin-left: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px black;
+        }
+        .three-box-1:hover #icon{
+            background-color: orangered;
+        }
+        .three-box-2{
+            width: 230px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-top: -30px;
+            margin-left: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px black;
+        }
+        .three-box-2:hover #icon{
+            background-color: orangered;
+        }
+        .three-box-3{
+            width: 230px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-top: -30px;
+            margin-left: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 2px black;
+        }
+        .three-box-3:hover #icon{
+            background-color: orangered;
+        }
+        .three-sub{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            background-color: blue;
+            float: left;
+            margin-left: 30%;
+            margin-top: 30px;
+        }
+        .three-sub i{
+            font-size: 30px;
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+            float: left;
+        }
+        .three span{
+            font-weight: bolder;
+            float: left;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+        .four{
+            width: 100%;
+            height: 100px;
+            background-color: green;
+            background-color: transparent;
+            float: left;
+        }
+        .four h6{
+            color: red;
+            margin-left: 10%;
+            margin-top: 40px;
+        }
+        .four h2{
+            float: left;
+            margin-left: 10%;
+            margin-top: 5px;
+        }
+        .four button{
+            float: left;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            border: none;
+            margin-left: 52%;
+            margin-top: 5px;
+            background-color: orangered;
+            cursor: pointer;
+        }
+        .four button:hover{
+            background-color: blue;
+        }
+        .four a{
+            text-decoration: none;
+            color: white;
+        }
+        .five{
+            width: 100%;
+            height: 400px;
+            background-color: red;
+            background-color: transparent;
+            float: left;
+        }
+        .five-box{
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: aqua;
+            background-image: url(trending-01.jpg);
+            float: left;
+            margin-top: 20px;
+            margin-left: 5%;
+        }
+        .five-sub{
+            width: 50px;
+            height: 45px;
+            background-color: blue;
+            border-radius: 10px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 75%;
+            padding-top: 10px;
+        }
+        .five-span{
+            color: white;
+            padding-top: 10px;
+            padding-left: 20px;
+            text-decoration-line: line-through;
+        }
+        .five-span-2{
+            color: white;
+            font-weight: bolder;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        .five-box-2{
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: gold;
+            float: left;
+            background-image: url(trending-02.jpg);
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+        .five-sub-2{
+            width: 50px;
+            height: 30px;
+            background-color: blue;
+            border-radius: 10px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 75%;
+        }
+        .five-span-3{
+            color: white;
+            font-weight: bolder;
+            float: left;
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+        .five-box-3{
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: aqua;
+            background-image: url(trending-03.jpg);
+            float: left;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+        .five-box-4{
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: violet;
+            background-image: url(trending-04.jpg);
+            float: left;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+        .five-bottom{
+            width: 300px;
+            height: 100px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            background-color: rgba(128, 128, 128, 0.642);
+            float: left;
+            margin-left: 5%;
+        }
+        .five-bottom p{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .five-bottom h4{
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .five-bottom:hover #cre{
+            color: blue;
+        }
+        .five-bottom:hover #con{
+            background-color: blue;
+        }
+        .five-icon{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: orangered;
+            float: left;
+            margin-left: 40%;
+        }
+        .five-icon i{
+            color: white;
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        .five-bottom-2{
+            width: 300px;
+            height: 100px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            background-color: rgba(128, 128, 128, 0.642);
+            float: left;
+            margin-left: 0.5%;
+        }
+        .five-bottom-2 p{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .five-bottom-2 h4{
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .five-bottom-2:hover #cre{
+            color: blue;
+        }
+        .five-bottom-2:hover #con{
+            background-color: blue;
+        }
+        .five-bottom-3{
+            width: 300px;
+            height: 100px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            background-color: rgba(128, 128, 128, 0.642);
+            float: left;
+             margin-left: 0.5%;
+        }
+        .five-bottom-3 p{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .five-bottom-3 h4{
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .five-bottom-3:hover #cre{
+            color: blue;
+        }
+        .five-bottom-3:hover #con{
+            background-color: blue;
+        }
+        .five-bottom-4{
+            width: 300px;
+            height: 100px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            background-color: rgba(128, 128, 128, 0.642);
+            float: left;
+             margin-left: 0.5%;
+        }
+        .five-bottom-4 p{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .five-bottom-4 h4{
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .five-bottom-4:hover #cre{
+            color: blue;
+        }
+        .five-bottom-4:hover #con{
+            background-color: blue;
+        }
+        .six{
+            width: 100%;
+            height: 500px;
+            border-radius: 90px;
+            background-color: rgba(128, 128, 128, 0.642);
+            float: left;
+        }
+        .six-header{
+            width: 80%;
+            height: 100px;
+            background-color: aqua;
+            background-color: transparent;
+            float: left;
+            margin-top: 20px;
+            margin-left: 10%;
+        }
+        .six-header h3{
+            color: orangered;
+        }
+        .six-header h2{
+            float: left;
+            margin-top: 10px;
+        }
+        .six-header button{
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            border: none;
+            margin-left: 70%;
+            margin-top: 10px;
+            background-color: orangered;
+            cursor: pointer;
+        }
+        .six-header button:hover{
+            background-color: blue;
+        }
+        .six-header a{
+            text-decoration: none;
+        }
+        .six-box{
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            float: left;
+            margin-left: 5%;
+            border-radius: 20px;
+        }
+        .six-box img{
+            width: 200px;
+            border-radius: 20px;
+        }
+        .six-box p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .six-box h2{
+            text-align: center;
+        }
+        .six-box button{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            float: left;
+            border-radius: 20px;
+            margin-left: 28%;
+            margin-top: 20px;
+            border: none;
+        }
+        .six-box:hover #ass{
+            color: blue;
+        }
+        .six-box:hover #ex{
+            background-color: blue;
+        }
+        .six-box-2{
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .six-box-2 img{
+            width: 200px;
+            border-radius: 20px;
+        }
+        .six-box-2 p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .six-box-2 h2{
+            text-align: center;
+        }
+        .six-box-2 button{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            float: left;
+            border-radius: 20px;
+            margin-left: 28%;
+            margin-top: 20px;
+            border: none;
+        }
+        .six-box-2:hover #ass{
+            color: blue;
+        }
+        .six-box-2:hover #ex{
+            background-color: blue;
+        }
+        .six-box-3{
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .six-box-3 img{
+            width: 200px;
+            border-radius: 20px;
+        }
+        .six-box-3 p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .six-box-3 h2{
+            text-align: center;
+        }
+        .six-box-3 button{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            float: left;
+            border-radius: 20px;
+            margin-left: 28%;
+            margin-top: 20px;
+            border: none;
+        }
+        .six-box-3:hover #ass{
+            color: blue;
+        }
+        .six-box-3:hover #ex{
+            background-color: blue;
+        }
+        .six-box-4{
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .six-box-4 img{
+            width: 200px;
+            border-radius: 20px;
+        }
+        .six-box-4 p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .six-box-4 h2{
+            text-align: center;
+        }
+        .six-box-4 button{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            float: left;
+            border-radius: 20px;
+            margin-left: 28%;
+            margin-top: 20px;
+            border: none;
+        }
+        .six-box-4:hover #ass{
+            color: blue;
+        }
+        .six-box-4:hover #ex{
+            background-color: blue;
+        }
+        .six-box-5{
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .six-box-5 img{
+            width: 200px;
+            border-radius: 20px;
+        }
+        .six-box-5 p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .six-box-5 h2{
+            text-align: center;
+        }
+        .six-box-5 button{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            float: left;
+            border-radius: 20px;
+            margin-left: 28%;
+            margin-top: 20px;
+            border: none;
+        }
+        .six-box-5:hover #ass{
+            color: blue;
+        }
+        .six-box-5:hover #ex{
+            background-color: blue;
+        }
+        .six-box-6{
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .six-box-6 img{
+            width: 200px;
+            border-radius: 20px;
+        }
+        .six-box-6 p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .six-box-6 h2{
+            text-align: center;
+        }
+        .six-box-6 button{
+            width: 100px;
+            height: 40px;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            float: left;
+            border-radius: 20px;
+            margin-left: 28%;
+            margin-top: 20px;
+            border: none;
+        }
+        .six-box-6:hover #ass{
+            color: blue;
+        }
+        .six-box-6:hover #ex{
+            background-color: blue;
+        }
+        .seven{
+            width: 100%;
+            height: 300px;
+            background-color: red;
+            background-color: transparent;
+            float: left;
+        }
+        .seven p{
+            color: orangered;
+            text-align: center;
+            margin-top: 10%;
+        }
+        .seven h2{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .eight{
+            width: 100%;
+            height: 400px;
+            background-color: green;
+            background-color: transparent;
+            float: left;
+        }
+        .eight-box{
+            width: 235px;
+            height: 287px;
+            background-color: blue;
+            float: left;
+            margin-left: 5%;
+            border-radius: 20px;
+        }
+        .eight-box h2{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .eight-box img{
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        .eight-box-2{
+            width: 235px;
+            height: 287px;
+            background-color: blue;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .eight-box-2 h2{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .eight-box-2 img{
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        .eight-box-3{
+            width: 235px;
+            height: 287px;
+            background-color: blue;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .eight-box-3 h2{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .eight-box-3 img{
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        .eight-box-4{
+            width: 235px;
+            height: 287px;
+            background-color: blue;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .eight-box-4 h2{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .eight-box-4 img{
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        .eight-box-5{
+            width: 235px;
+            height: 287px;
+            background-color: blue;
+            float: left;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .eight-box-5 h2{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .eight-box-5 img{
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        .nine{
+            width: 100%;
+            height: 400px;
+            background-color: red;
+            background-color: transparent;
+            float: left;
+        }
+        .nine-box{
+            width: 350px;
+            height: 350px;
+            background-color: aliceblue;
+            float: left;
+            border-radius: 20px;
+            margin-left: -60%;
+            margin-top: 20px;
+            box-shadow: 0 0 1px black;
+        }
+        .nine-box h3{
+            color: orangered;
+            margin-top: 20px;
+            margin-left: 40px;
+            font-size: 15px;
+        }
+        .nine-box h2{
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        .nine-box span{
+            color: blue;
+        }
+        .nine-box p{
+            font-size: 15px;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .nine-box button{
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+            margin-top: 40px;
+            margin-left: 40px;
+            background-color: orangered;
+        }
+        .nine-box button:hover{
+            background-color: blue;
+        }
+        .nine-box a{
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .nine-box-2{
+            width: 400px;
+            height: 300px;
+            background-color: yellow;
+            float: left;
+            border-radius: 20px;
+            margin-left: 30%;
+            background-image: url(trending-01.jpg);
+            background-size: cover;
+        }
+        .nine-box-3{
+            width: 400px;
+            height: 270px;
+            background-color: aliceblue;
+            float: left;
+            border-radius: 20px;
+            margin-left: -60px;
+            margin-top: 100px;
+            box-shadow: 0 0 1px black;
+        }
+        .nine-box-3 h3{
+            color: orangered;
+            margin-top: 20px;
+            margin-left: 40px;
+            font-size: 15px;
+        }
+        .nine-box-3 h2{
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        .nine-box-3 span{
+            color: blue;
+        }
+        .nine-sub{
+            width: 100%;
+            height: 60px;
+            background-color: blue;
+            background-color: transparent;
+            float: left;
+            margin-top: 40px;
+        }
+        .nine-sub input{
+            width: 210px;
+            height: 40px;
+            margin-left: 35px;
+            border-radius: 20px;
+            border: none;
+            float: left;
+            box-shadow: 0 0 1px black;
+        }
+        .nine-sub input::placeholder{
+            padding-left: 10px;
+            font-weight: bolder;
+        }
+        .nine-sub-2{
+            width: 170px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: orangered;
+            float: left;
+            margin-left: -40px;
+        }
+        .nine-sub-2:hover{
+            background-color: blue;
+        }
+        .nine-sub-2 a{
+            color: white;
+            text-decoration: none;
+            padding-top: 10px;
+            padding-left: 20px;
+            float: left;
+        }
+        .ten{
+            width: 100%;
+            height: 200px;
+            background-color: gold;
+            background-color: transparent;
+            float: left;
+        }
+        .foot{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 80px;
+            float: left;
+            margin-top: 7%;
+        }
+        .foot p{
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+        }
+        .foot span{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="one">
+            <i class="fa-brands fa-xbox"></i>
+            <h3>LUGX</h3>
+            <nav>
+                <ul>
+                    <li id="bold"><a href="">Home</a></li>
+                    <li><a href="">Our Shop</a></li>
+                    <li><a href="">Product Details</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <button>SIGN IN</button>
+            </nav>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="two">
+            <div class="left">
+                <h5>WELCOME TO LUGX</h5>
+                <h6>BEST GAMING SITE EVER!</h6>
+                <p>
+                    LUGX Gaming is free Boootstrap 5 HTML CSS website template for your gaming websites.You <br>
+                    can download and use this layout for commercial purposes.Please tell your friends about <br>
+                    TemplateMo.
+                </p>
+                <div class="left-div">
+                    <input type="text" placeholder="Type Something">
+                    <div class="search">
+                        <span>SEARCH NOW</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="banner-image.jpg" alt="">
+                <div class="right-top">
+                    <span class="right-span">$22</span>
+                </div>
+                <div class="right-bottom">
+                    <span class="right-span-2">-40%</span>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="three">
+            <div class="three-box">
+                <div class="three-sub" id="icon">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <span>FREE STORAGE</span>
+            </div>
+            <div class="three-box-1">
+                <div class="three-sub" id="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <span>USER MORE</span>
+            </div>
+            <div class="three-box-2">
+                <div class="three-sub" id="icon">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <span>REPLY READY</span>
+            </div>
+            <div class="three-box-3">
+                <div class="three-sub" id="icon">
+                    <i class="fa-solid fa-file"></i>
+                </div>
+                <span>EASY LAYOUT</span>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="four">
+            <h6>TRENDING</h6>
+            <h2>Trending Games</h2>
+            <button>
+                <a href="">VIEW ALL</a>
+            </button>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="five">
+            <div class="five-box">
+                <div class="five-sub">
+                    <span class="five-span">$20</span>
+                    <span class="five-span-2">$20</span>
+                </div>
+            </div>
+            <div class="five-box-2">
+                <div class="five-sub-2">
+                    <span class="five-span-3">$44</span>
+                </div>
+            </div>
+            <div class="five-box-3">
+                <div class="five-sub">
+                    <span class="five-span">$64</span>
+                    <span class="five-span-2">$44</span>
+                </div>
+            </div>
+            <div class="five-box-4">
+                <div class="five-sub-2">
+                    <span class="five-span-3">$32</span>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+
+            <div class="five-bottom">
+                <p>Action</p>
+                <h4 id="cre">Assasin creed</h4>
+                <div class="five-icon" id="con">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+            <div class="five-bottom-2">
+                <p>Action</p>
+                <h4 id="cre">Assasin creed</h4>
+                <div class="five-icon" id="con">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+            <div class="five-bottom-3">
+                <p>Action</p>
+                <h4 id="cre">Assasin creed</h4>
+                <div class="five-icon" id="con">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+            <div class="five-bottom-4">
+                <p>Action</p>
+                <h4 id="cre">Assasin creed</h4>
+                <div class="five-icon" id="con">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="six">
+            <div class="six-header">
+                <h3>TOP GAMES</h3>
+                <h2>Most Played</h2>
+                <button>
+                    <a href="">VIEW ALL</a>
+                </button>
+            </div>
+            <div class="six-box">
+                <img src="top-game-01.jpg" alt="">
+                <p>Adventure</p>
+                <h2 id="ass">Assasin Creed</h2>
+                <button id="ex">
+                    EXPLORE
+                </button>
+            </div>
+            <div class="six-box-2">
+                <img src="top-game-02.jpg" alt="">
+                <p>Adventure</p>
+                <h2 id="ass">Assasin Creed</h2>
+                <button id="ex">
+                    EXPLORE
+                </button>
+            </div>
+            <div class="six-box-3">
+                <img src="top-game-03.jpg" alt="">
+                <p>Adventure</p>
+                <h2 id="ass">Assasin Creed</h2>
+                <button id="ex">
+                    EXPLORE
+                </button>
+            </div>
+            <div class="six-box-4">
+                <img src="top-game-04.jpg" alt="">
+                <p>Adventure</p>
+                <h2 id="ass">Assasin Creed</h2>
+                <button id="ex">
+                    EXPLORE
+                </button>
+            </div>
+            <div class="six-box-5">
+                <img src="top-game-05.jpg" alt="">
+                <p>Adventure</p>
+                <h2 id="ass">Assasin Creed</h2>
+                <button id="ex">
+                    EXPLORE
+                </button>
+            </div>
+            <div class="six-box-6">
+                <img src="top-game-06.jpg" alt="">
+                <p>Adventure</p>
+                <h2 id="ass">Assasin Creed</h2>
+                <button id="ex">
+                    EXPLORE
+                </button>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="seven">
+            <p>CATEGORIES</p>
+            <h2>Top Categories</h2>
+        </div>
+
+        <div class="eight">
+            <div class="eight-box">
+                <h2>Action</h2>
+                <img src="categories-01.jpg" alt="">
+            </div>
+            <div class="eight-box-2">
+                <h2>Action</h2>
+                <img src="categories-05.jpg" alt="">
+            </div>
+            <div class="eight-box-3">
+                <h2>Action</h2>
+                <img src="categories-03.jpg" alt="">
+            </div>
+            <div class="eight-box-4">
+                <h2>Action</h2>
+                <img src="categories-04.jpg" alt="">
+            </div>
+            <div class="eight-box-5">
+                <h2>Action</h2>
+                <img src="categories-05.jpg" alt="">
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="nine">
+            <div class="nine-box-2">
+                <div class="nine-box">
+                    <h3>OUR SHOP</h3>
+                    <h2>
+                        Go Pre-Order Buy <br>
+                        & Get Best <span>Prices</span> <br>
+                        For You!
+                    </h2>
+                    <p>lorem ipsium dolor consectetur adipiscing,<br>
+                        sed do eiusmod tempor incididunt.
+                    </p>
+                    <button>
+                        <a href="">SHOP NOW</a>
+                    </button>
+                </div>
+            </div>
+            <div class="nine-box-3">
+                <h3>NEWSLETTER</h3>
+                <h2>
+                    Get Up To $100 Off <br>
+                    Just Buy <span>Subscribe</span> <br>
+                    Newsletter!
+                </h2> 
+                <div class="nine-sub">
+                    <input type="email" placeholder="Your email...">
+                    <div class="nine-sub-2">
+                        <a href="">SUBCRIBE NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="ten">
+            <div class="foot">
+                <p>
+                    Copyright&copy;2048 LUGX GAMING COMPANY.All rights reserved. 
+                    <span>Design:TempleteMo</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
